@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Node Properties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        p {
+            color: #666;
+        }
+        
+        ul {
+            list-style-type: disc;
+            color: #666;
+        }
+        
+        li {
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">The DOM's World</h1>
+    <p>This is some of the list of basic node properties. </p>
+    <ul>
+        <li>Node Name</li>
+        <li>Node Type</li>
+        <li>Node Value</li>
+    </ul>
+
+    <script>
+        //To access the nodes
+        var titleNode = document.getElementById("title");
+        var paragraphNode = document.querySelector("p");
+        var listItemNodes = document.querySelectorAll("li");
+
+        //To access the node properties
+        console.log("Name of Node:", titleNode.nodeName);
+        console.log("Type of Node:", titleNode.nodeType);
+        console.log("ID:", titleNode.id);
+
+        console.log("Name of Node:", paragraphNode.nodeName);
+        console.log("Type of Node:", paragraphNode.nodeType);
+        console.log("Text Content:", paragraphNode.textContent);
+        console.log("ID:", paragraphNode.id);
+
+        for (var i = 0; i < listItemNodes.length; i++) {
+            console.log("Node Name:", listItemNodes[i].nodeName);
+            console.log("Type of Node:", listItemNodes[i].nodeType);
+            console.log("Text Content:", listItemNodes[i].textContent);
+            console.log("ID:", listItemNodes[i].id);
+        }
+
+    </script>
+</body>
+
+</html>

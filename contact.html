@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MHRPS</title>
+  <link rel="icon" type="image/x-icon" href="image/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <!--for android RWD-->
+  <link rel="stylesheet" href="css/contact-phn.css">
+
+</head>
+
+<body>
+  <header>
+    <!--navbar starts-->
+    <section class="navbar">
+      <div class="title">
+        <div class="slider-text">
+          <div>Leadership</div>
+          <div>Creativity</div>
+          <div>Innovation</div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <div class="tooltip">
+            <li><a href="#">About Us</a></li>
+            <span class="tooltiptext">
+              <a href="#">History</a><br>
+            </span>
+          </div>
+
+          <li><a href="services.html">Services</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a Contact href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+
+      <!--menubar toggle-->
+      <div class="menu">
+        <div id="toggle"></div>
+        <section class="navigation">
+          <span style="--i:0;"></span>
+          <span style="--i:1;"></span>
+          <span style="--i:2;"></span>
+          <span style="--i:3;"></span>
+          <ul onclick="menuItem()">
+            <li><a href="About us.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+
+    <div class="top-head">
+      <a href="index.html">HOME</a>
+      <img src="image/arrow next2.png">
+      <a href="#" class="main-a">CONTACT</a>
+    </div>
+    <h3>CONTACT</h3>
+    <h2>GET IN TOUCH WITH US</h2>
+  </header>
+  <main>
+    <div class="con-p">
+      <p>Require assistance? Submit a message online or reach us via the
+        contact details below. We would love to hear from you!
+      </p>
+    </div>
+
+    <section class="form">
+      <h3>SUBMIT AN ONLINE INQUIRY OR GIVE US YOUR FEEDBACK!
+      </h3>
+      <form>
+        <label for="name" id="">Name*</label><br>
+        <input type="text" name="name" id="nm" required>
+        <br>
+
+        <label for="email" id="">Email*</label><br>
+        <input type="email" name="email" id="eml" required>
+        <br>
+        <label for="phone" id="">Phone*</label><br>
+        <input type="number" name="phone" id="phn"><br>
+
+        <label for="Category" id="">Category of Inquiry*</label><br>
+        <select>
+          <option value="Admissions">Admissions</option>
+          <option value="Alumni">Alumni</option>
+          <option value="Board">Board</option>
+          <option value="General">General</option>
+          <option value="High School">High School</option>
+          <option value="Primary School">Primary School</option>
+          <option value="Principal">Principal</option>
+        </select>
+
+        <p class="cmnt">Write your comments:</p>
+        <textarea cols="30" rows="5"></textarea>
+        <br>
+        <div class="container">
+          <button type="submit"><span>SUBMIT</span></button>
+        </div>
+        <button class="clear-btn" type="reset">CLEAR</button>
+
+      </form>
+    </section>
+
+    <section class="cont-gif">
+      <img src="image/cartoon 2.gif">
+    </section>
+  </main>
+
+  <!--footer starts-->
+  <footer>
+    <section class="left-foot">
+      <a href="contact.html" class="cont-a">Contact Us</a><br>
+      <a href="tel:01945199279" class="tel-a">(042) 717 4024</a>
+      <p class="addrs">Convento st. Brgy. Talolong Lopez, Quezon</p>
+      <p class="copyrt">&copy;2023 Most Holy Rosary Parochial School by <a
+          href="https://www.facebook.com/nashreyn/">Nashraine Ghulam</a></p>
+    </section>
+    <section class="right-foot">
+      <div class="foot-menu">
+        <a href="index.html">Home</a>
+        <a href="About us.html">About us</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html ">Registration</a>
+      </div>
+      <div class="social-menus">
+        <a href="https://www.facebook.com/mhrps1985"><i class="fab fa-facebook"></i></a>
+        <a href="https://goo.gl/maps/ZstMixvGepWVVejF6"><i class="fas fa-map-marker-alt"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/mhrpslopez"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+      </div>
+
+    </section>
+  </footer>
+  <!--footer ends-->
+
+  <script src="school.js"></script>
+
+  <script>
+    //sticky navbar
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector(".navbar");
+      header.classList.toggle("sticky", window.scrollY > 40)
+    })
+
+    //menubar toggle and navigation
+
+    const navigation = document.querySelector('.navigation');
+    document.getElementById('toggle').onclick = function () {
+      this.classList.toggle('active');
+      navigation.classList.toggle('active');
+    }
+    function menuItem() {
+      document.querySelector(".navigation").classList.remove("active");
+      document.querySelector("#toggle").classList.remove("active");
+    }
+
+  </script>
+
+  <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- jQuery code-->
+  <!-- Smooth scroll script -->
+  <script>
+    $(document).ready(function () {
+      $('a[href^="#"]').on('click', function (event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 800);
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

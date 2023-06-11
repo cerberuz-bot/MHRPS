@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 20px;
+    }
+
+    p {
+      padding: 10px;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .highlight {
+      background-color: lightblue;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h2>About Me</h2>
+  <p>My name is Nashraine Orlina Ghulam.</p>
+  <p>Currently studying at Southern Luzon State University.</p>
+  <p>Taking up the course of Bachelor of Science in Computer Engineering.</p>
+
+  <script>
+    $(document).ready(function() {
+      var searchText = "Nashraine";
+      var targetElements = $("p:contains(" + searchText + ")");
+      targetElements.addClass("highlight");
+    });
+  </script>
+</body>
+</html>
